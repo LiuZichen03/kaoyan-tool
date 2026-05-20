@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-23",
+  "tasks": [
+    {
+      "id": "w1d3-1",
+      "subject": "math",
+      "title": "高数第1讲⑤：函数的连续与间断（连续定义/间断点分类/零点定理/介值定理）",
+      "timeSlot": "08:00-10:00",
+      "completed": false
+    },
+    {
+      "id": "w1d3-2",
+      "subject": "math",
+      "title": "高数第2讲：数列极限（定义/单调有界准则/夹逼准则/归结原则）——看书写题不听课",
+      "timeSlot": "10:00-12:00",
+      "completed": false
+    },
+    {
+      "id": "w1d3-3",
+      "subject": "math",
+      "title": "第1讲收尾+第2讲例题+基础300题",
+      "timeSlot": "13:00-14:00",
+      "completed": false
+    },
+    {
+      "id": "w1d3-4",
+      "subject": "cs",
+      "title": "DS第2章②：单链表+双链表（定义/头插尾插/按位按值查找/删除/双向遍历）",
+      "timeSlot": "14:00-17:00",
+      "completed": false
+    },
+    {
+      "id": "w1d3-5",
+      "subject": "english",
+      "title": "复习前100词 + 新学50词 + 长难句×1",
+      "timeSlot": "17:00-17:30",
+      "completed": false
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "基础阶段",
+      "startDate": "2026-05-21",
+      "endDate": "2026-06-30",
+      "milestones": [
+        {
+          "id": "m1-1",
+          "subject": "math",
+          "title": "张宇30讲 — 高等数学分册（18讲）",
+          "chapters": [
+            "高数-第1讲: 函数极限与连续",
+            "高数-第2讲: 数列极限",
+            "高数-第3讲: 一元函数微分学的概念",
+            "高数-第4讲: 一元函数微分学的计算",
+            "高数-第5讲: 几何应用",
+            "高数-第6讲: 中值定理、微分等式与微分不等式",
+            "高数-第7讲: 物理应用与经济应用",
+            "高数-第8讲: 一元函数积分学的概念与性质",
+            "高数-第9讲: 一元函数积分学的计算",
+            "高数-第10讲: 几何应用",
+            "高数-第11讲: 积分等式与积分不等式",
+            "高数-第12讲: 物理应用与经济应用",
+            "高数-第13讲: 多元函数微分学",
+            "高数-第14讲: 二重积分",
+            "高数-第15讲: 微分方程",
+            "高数-第16讲: 无穷级数",
+            "高数-第17讲: 多元函数积分学的预备知识",
+            "高数-第18讲: 三重积分、曲线曲面积分"
+          ],
+          "startDate": "2026-05-21",
+          "endDate": "2026-06-15",
+          "completed": false
+        },
+        {
+          "id": "m1-2",
+          "subject": "math",
+          "title": "张宇30讲 — 线性代数分册（6讲）",
+          "chapters": [
+            "线代-第1讲: 行列式",
+            "线代-第2讲: 矩阵",
+            "线代-第3讲: 向量组",
+            "线代-第4讲: 线性方程组",
+            "线代-第5讲: 特征值与特征向量",
+            "线代-第6讲: 二次型"
+          ],
+          "startDate": "2026-06-16",
+          "endDate": "2026-06-22",
+          "completed": false
+        },
+        {
+          "id": "m1-3",
+          "subject": "math",
+          "title": "张宇30讲 — 概率论与数理统计分册（6讲）",
+          "chapters": [
+            "概率-第1讲: 随机事件与概率",
+            "概率-第2讲: 一维随机变量及其分布",
+            "概率-第3讲: 多维随机变量及其分布",
+            "概率-第4讲: 数字特征",
+            "概率-第5讲: 大数定律与中心极限定理",
+            "概率-第6讲: 数理统计"
+          ],
+          "startDate": "2026-06-23",
+          "endDate": "2026-06-30",
+          "completed": false
+        },
+        {
+          "id": "m1-4",
+          "subject": "english",
+          "title": "词汇积累 + 长难句分析",
+          "chapters": ["词汇与语法", "长难句分析"],
+          "startDate": "2026-05-21",
+          "endDate": "2026-06-30",
+          "completed": false
+        },
+        {
+          "id": "m1-5",
+          "subject": "cs",
+          "title": "数据结构 + 计算机组成原理第一轮",
+          "chapters": [
+            "DS-绪论", "DS-线性表", "DS-栈和队列", "DS-串",
+            "DS-树与二叉树", "DS-图", "DS-查找", "DS-排序",
+            "计组-计算机系统概述", "计组-数据的表示和运算", "计组-存储系统",
+            "计组-指令系统", "计组-中央处理器", "计组-总线与IO系统"
+          ],
+          "startDate": "2026-05-21",
+          "endDate": "2026-06-30",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "name": "强化阶段",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30",
+      "milestones": [
+        {
+          "id": "m2-1",
+          "subject": "math",
+          "title": "张宇36讲 + 《1000题》",
+          "chapters": [],
+          "startDate": "2026-07-01",
+          "endDate": "2026-09-30",
+          "completed": false
+        },
+        {
+          "id": "m2-2",
+          "subject": "english",
+          "title": "真题阅读 + 完形 + 新题型 + 翻译",
+          "chapters": ["阅读理解", "完形填空", "新题型", "翻译"],
+          "startDate": "2026-07-01",
+          "endDate": "2026-09-30",
+          "completed": false
+        },
+        {
+          "id": "m2-3",
+          "subject": "cs",
+          "title": "408四门课强化 + 王道课后题",
+          "chapters": [
+            "DS-绪论", "DS-线性表", "DS-栈和队列", "DS-串",
+            "DS-树与二叉树", "DS-图", "DS-查找", "DS-排序",
+            "计组-计算机系统概述", "计组-数据的表示和运算", "计组-存储系统",
+            "计组-指令系统", "计组-中央处理器", "计组-总线与IO系统",
+            "OS-计算机系统概述", "OS-进程管理", "OS-内存管理",
+            "OS-文件管理", "OS-输入输出管理",
+            "计网-体系结构", "计网-物理层", "计网-数据链路层",
+            "计网-网络层", "计网-传输层", "计网-应用层"
+          ],
+          "startDate": "2026-07-01",
+          "endDate": "2026-09-30",
+          "completed": false
+        },
+        {
+          "id": "m2-4",
+          "subject": "politics",
+          "title": "政治启动 — 徐涛强化课 + 肖1000题",
+          "chapters": ["马克思主义基本原理", "毛中特", "史纲", "思修法基"],
+          "startDate": "2026-07-01",
+          "endDate": "2026-09-30",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "name": "真题阶段",
+      "startDate": "2026-10-01",
+      "endDate": "2026-11-30",
+      "milestones": [
+        {
+          "id": "m3-1",
+          "subject": "math",
+          "title": "数学真题套卷（2009-2026）",
+          "chapters": [],
+          "startDate": "2026-10-01",
+          "endDate": "2026-11-30",
+          "completed": false
+        },
+        {
+          "id": "m3-2",
+          "subject": "english",
+          "title": "英语真题套卷 + 作文模板",
+          "chapters": ["写作"],
+          "startDate": "2026-10-01",
+          "endDate": "2026-11-30",
+          "completed": false
+        },
+        {
+          "id": "m3-3",
+          "subject": "cs",
+          "title": "408历年真题 + 模拟题",
+          "chapters": [],
+          "startDate": "2026-10-01",
+          "endDate": "2026-11-30",
+          "completed": false
+        },
+        {
+          "id": "m3-4",
+          "subject": "politics",
+          "title": "肖八 + 形策 + 时政",
+          "chapters": ["时政与当代"],
+          "startDate": "2026-10-01",
+          "endDate": "2026-11-30",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "name": "冲刺阶段",
+      "startDate": "2026-12-01",
+      "endDate": "2026-12-19",
+      "milestones": [
+        {
+          "id": "m4-1",
+          "subject": "math",
+          "title": "错题回顾 + 公式默写 + 模拟卷",
+          "chapters": [],
+          "startDate": "2026-12-01",
+          "endDate": "2026-12-19",
+          "completed": false
+        },
+        {
+          "id": "m4-2",
+          "subject": "english",
+          "title": "作文模板背诵 + 保持手感",
+          "chapters": [],
+          "startDate": "2026-12-01",
+          "endDate": "2026-12-19",
+          "completed": false
+        },
+        {
+          "id": "m4-3",
+          "subject": "cs",
+          "title": "408核心考点回顾 + 错题",
+          "chapters": [],
+          "startDate": "2026-12-01",
+          "endDate": "2026-12-19",
+          "completed": false
+        },
+        {
+          "id": "m4-4",
+          "subject": "politics",
+          "title": "肖四背诵 + 大题押题",
+          "chapters": [],
+          "startDate": "2026-12-01",
+          "endDate": "2026-12-19",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

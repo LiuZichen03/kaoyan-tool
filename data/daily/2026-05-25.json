@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-25",
+  "tasks": [
+    {
+      "id": "w1d5-1",
+      "subject": "math",
+      "title": "弹性日：本周数学错题回顾——第1讲极限证明+等价无穷小替换易错点+导数定义题",
+      "timeSlot": "08:00-12:00",
+      "completed": false
+    },
+    {
+      "id": "w1d5-2",
+      "subject": "english",
+      "title": "本周单词总复习~250词 + 5个长难句重新拆解一遍",
+      "timeSlot": "13:00-14:00",
+      "completed": false
+    },
+    {
+      "id": "w1d5-3",
+      "subject": "cs",
+      "title": "DS第1-2章回顾：绪论思维导图 + 线性表代码默写（顺序表/单链表/双链表全部基本操作）",
+      "timeSlot": "14:00-17:00",
+      "completed": false
+    }
+  ]
+}

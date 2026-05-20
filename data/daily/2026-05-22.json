@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-22",
+  "tasks": [
+    {
+      "id": "w1d2-1",
+      "subject": "math",
+      "title": "高数第1讲③：极限概念与性质（ε-δ/唯一性/局部有界/保号性/无穷小阶的比较）",
+      "timeSlot": "08:00-10:00",
+      "completed": false
+    },
+    {
+      "id": "w1d2-2",
+      "subject": "math",
+      "title": "高数第1讲④：极限计算（等价无穷小/泰勒/L'Hôpital/夹逼/七种未定式）",
+      "timeSlot": "10:00-12:00",
+      "completed": false
+    },
+    {
+      "id": "w1d2-3",
+      "subject": "math",
+      "title": "极限计算专项练习+第1讲例题重做",
+      "timeSlot": "13:00-14:00",
+      "completed": false
+    },
+    {
+      "id": "w1d2-4",
+      "subject": "cs",
+      "title": "DS第2章①：线性表定义+顺序表（存储/插入/删除/查找）",
+      "timeSlot": "14:00-17:00",
+      "completed": false
+    },
+    {
+      "id": "w1d2-5",
+      "subject": "english",
+      "title": "复习昨天50词 + 新学50词 + 长难句×1",
+      "timeSlot": "17:00-17:30",
+      "completed": false
+    }
+  ]
+}

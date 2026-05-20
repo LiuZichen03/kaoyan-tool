@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-24",
+  "tasks": [
+    {
+      "id": "w1d4-1",
+      "subject": "math",
+      "title": "高数第3讲①：导数定义/左右导数/可导与连续关系/微分定义 || ②：求导法则（四则/复合/隐函数/参数方程/反函数/对数求导）",
+      "timeSlot": "08:00-12:00",
+      "completed": false
+    },
+    {
+      "id": "w1d4-2",
+      "subject": "math",
+      "title": "第3讲例题精做+基础300题微分练习",
+      "timeSlot": "13:00-14:00",
+      "completed": false
+    },
+    {
+      "id": "w1d4-3",
+      "subject": "cs",
+      "title": "DS第2章③：循环链表+静态链表+顺序表vs链表对比+章末习题",
+      "timeSlot": "14:00-17:00",
+      "completed": false
+    },
+    {
+      "id": "w1d4-4",
+      "subject": "english",
+      "title": "复习前150词 + 新学50词 + 长难句×1",
+      "timeSlot": "17:00-17:30",
+      "completed": false
+    }
+  ]
+}
