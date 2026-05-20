@@ -21,8 +21,7 @@ export default function Sidebar() {
     <aside className="w-56 shrink-0 bg-zinc-900 text-zinc-300 flex flex-col min-h-full">
       <div className="px-5 py-6 border-b border-zinc-800">
         <h1 className="text-white text-lg font-bold tracking-tight">考研备考</h1>
-        <p className="text-zinc-500 text-xs mt-1">电子科技大学 · 计算机学硕</p>
-      </div>
+              </div>
 
       <nav className="flex-1 px-3 py-4 space-y-1">
         {NAV_ITEMS.map((item) => {
