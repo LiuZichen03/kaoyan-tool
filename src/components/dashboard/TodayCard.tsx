@@ -1,20 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { DailyPlan, SubjectId } from "@/lib/types";
+import { DailyPlan, TaskSubject } from "@/lib/types";
 
-const SUBJECT_LABELS: Record<SubjectId, string> = {
+const SUBJECT_LABELS: Record<TaskSubject, string> = {
   politics: "政治",
   english: "英语",
   math: "数学",
   cs: "专业课",
+  other: "杂事",
 };
 
-const SUBJECT_COLORS: Record<SubjectId, string> = {
+const SUBJECT_COLORS: Record<TaskSubject, string> = {
   politics: "bg-red-100 text-red-700",
   english: "bg-blue-100 text-blue-700",
   math: "bg-amber-100 text-amber-700",
   cs: "bg-emerald-100 text-emerald-700",
+  other: "bg-zinc-100 text-zinc-600",
 };
 
 export default function TodayCard({

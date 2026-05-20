@@ -1,18 +1,19 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { DailyPlan, Task, SubjectId, SubjectConfig, Mistake } from "@/lib/types";
+import { DailyPlan, Task, SubjectId, TaskSubject, SubjectConfig, Mistake } from "@/lib/types";
 import { CHAPTERS } from "@/lib/chapters";
 import WeekCalendar from "@/components/daily/WeekCalendar";
 import StudyTimer from "@/components/daily/StudyTimer";
 import CompactTimer from "@/components/daily/CompactTimer";
 import AskButton from "@/components/daily/AskButton";
 
-const SUBJECTS: { id: SubjectId; name: string }[] = [
-  { id: "politics", name: "政治" },
-  { id: "english", name: "英语" },
+const SUBJECTS: { id: TaskSubject; name: string }[] = [
   { id: "math", name: "数学" },
   { id: "cs", name: "专业课" },
+  { id: "english", name: "英语" },
+  { id: "politics", name: "政治" },
+  { id: "other", name: "杂事" },
 ];
 
 const TIME_SLOTS = [
@@ -20,7 +21,7 @@ const TIME_SLOTS = [
   "16:00-18:00", "19:00-21:00", "21:00-23:00",
 ];
 
-function newTask(subject: SubjectId = "math"): Task {
+function newTask(subject: TaskSubject = "math"): Task {
   return {
     id: crypto.randomUUID(),
     subject,
@@ -203,11 +204,12 @@ export default function DailyPage() {
   );
 }
 
-const SUBJECT_TIME_LABELS: Record<SubjectId, string> = {
+const SUBJECT_TIME_LABELS: Record<TaskSubject, string> = {
   politics: "政治",
   english: "英语",
   math: "数学",
   cs: "专业课",
+  other: "杂事",
 };
 
 function DailyReview({
@@ -352,16 +354,18 @@ function TaskRow({
               <option key={s.id} value={s.id}>{s.name}</option>
             ))}
           </select>
-          <select
-            value={chapter}
-            onChange={(e) => setChapter(e.target.value)}
-            className="text-xs px-2 py-1.5 border border-zinc-200 rounded-lg flex-1"
-          >
-            <option value="">（可选章节）</option>
-            {CHAPTERS[subject].map((c) => (
-              <option key={c} value={c}>{c}</option>
-            ))}
-          </select>
+          {subject !== "other" && (
+            <select
+              value={chapter}
+              onChange={(e) => setChapter(e.target.value)}
+              className="text-xs px-2 py-1.5 border border-zinc-200 rounded-lg flex-1"
+            >
+              <option value="">（可选章节）</option>
+              {CHAPTERS[subject].map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          )}
           <select
             value={timeSlot}
             onChange={(e) => setTimeSlot(e.target.value)}
@@ -422,18 +426,20 @@ function TaskRow({
   );
 }
 
-function SubjectBadge({ id }: { id: SubjectId }) {
-  const colors: Record<SubjectId, string> = {
+function SubjectBadge({ id }: { id: TaskSubject }) {
+  const colors: Record<TaskSubject, string> = {
     politics: "bg-red-100 text-red-700",
     english: "bg-blue-100 text-blue-700",
     math: "bg-amber-100 text-amber-700",
     cs: "bg-emerald-100 text-emerald-700",
+    other: "bg-zinc-100 text-zinc-600",
   };
-  const labels: Record<SubjectId, string> = {
+  const labels: Record<TaskSubject, string> = {
     politics: "政治",
     english: "英语",
     math: "数学",
     cs: "专业课",
+    other: "杂事",
   };
   return (
     <span className={`text-xs px-1.5 py-0.5 rounded ${colors[id]}`}>

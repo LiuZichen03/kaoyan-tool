@@ -1,4 +1,5 @@
 export type SubjectId = "politics" | "english" | "math" | "cs";
+export type TaskSubject = SubjectId | "other";
 export type QuestionType = "选择题" | "填空题" | "简答题" | "编程题";
 export type ReviewResult = "mastered" | "still_wrong";
 
@@ -15,7 +16,7 @@ export interface SubjectConfig {
 
 export interface Task {
   id: string;
-  subject: SubjectId;
+  subject: TaskSubject;
   title: string;
   timeSlot: string;
   completed: boolean;

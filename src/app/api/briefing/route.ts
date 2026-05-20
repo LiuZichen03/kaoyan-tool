@@ -71,7 +71,7 @@ export async function GET(): Promise<NextResponse> {
   }
 
   // --- Chapter progress ---
-  const chapterMap = new Map<string, { subject: SubjectId; total: number; completed: number }>();
+  const chapterMap = new Map<string, { subject: SubjectId | "other"; total: number; completed: number }>();
   for (const plan of allPlans) {
     for (const task of plan.tasks) {
       if (!task.chapter) continue;
