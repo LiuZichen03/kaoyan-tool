@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { DailyPlan, Task, SubjectId, TaskSubject, SubjectConfig, Mistake } from "@/lib/types";
 import { CHAPTERS } from "@/lib/chapters";
+import { todayLocal } from "@/lib/countdown";
 import WeekCalendar from "@/components/daily/WeekCalendar";
 import StudyTimer from "@/components/daily/StudyTimer";
 import CompactTimer from "@/components/daily/CompactTimer";
@@ -32,7 +33,7 @@ function newTask(subject: TaskSubject = "math"): Task {
 }
 
 export default function DailyPage() {
-  const today = new Date().toISOString().split("T")[0];
+  const today = todayLocal();
   const [selectedDate, setSelectedDate] = useState(today);
   const [plan, setPlan] = useState<DailyPlan | null>(null);
   const [loading, setLoading] = useState(true);
