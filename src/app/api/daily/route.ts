@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readJson, writeJson } from "@/lib/storage";
 import { DailyPlan, ApiResponse } from "@/lib/types";
+import { todayLocal } from "@/lib/countdown";
 
 export async function GET(request: NextRequest): Promise<NextResponse<ApiResponse<DailyPlan>>> {
   const { searchParams } = new URL(request.url);
-  const date = searchParams.get("date") || new Date().toISOString().split("T")[0];
+  const date = searchParams.get("date") || todayLocal();
 
   const plan = await readJson<DailyPlan>(`daily/${date}.json`);
 

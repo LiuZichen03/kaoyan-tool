@@ -13,7 +13,7 @@ import {
   ChapterWithProgress,
 } from "@/lib/types";
 import { CHAPTERS } from "@/lib/chapters";
-import { getCountdownDays } from "@/lib/countdown";
+import { getCountdownDays, todayLocal } from "@/lib/countdown";
 
 const SUBJECTS: SubjectId[] = ["math", "cs", "english", "politics"];
 const SUBJECT_NAMES: Record<SubjectId, string> = {
@@ -43,7 +43,7 @@ function getInsight(wrongTag: string, subjectName: string): string {
 }
 
 export async function GET(): Promise<NextResponse> {
-  const today = new Date().toISOString().split("T")[0];
+  const today = todayLocal();
 
   // --- Plan & phase ---
   const planData = await readJson<{ phases: PlanPhase[] }>("config/plan.json");
@@ -61,7 +61,8 @@ export async function GET(): Promise<NextResponse> {
   dailyDates.sort();
   const allPlans: DailyPlan[] = [];
   let yesterdayPlan: DailyPlan | null = null;
-  const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
+  const yesterdayDate = new Date(Date.now() - 86400000);
+  const yesterday = `${yesterdayDate.getFullYear()}-${String(yesterdayDate.getMonth() + 1).padStart(2, "0")}-${String(yesterdayDate.getDate()).padStart(2, "0")}`;
 
   for (const d of dailyDates) {
     const plan = await readJson<DailyPlan>(`daily/${d}.json`);

@@ -1,13 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readJson, listJsonFiles } from "@/lib/storage";
 import { DailyPlan, SubjectId, WeeklyStats, StatsData } from "@/lib/types";
+import { todayLocal } from "@/lib/countdown";
+
+function fmtDate(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
 
 function getWeekStart(dateStr: string): string {
   const d = new Date(dateStr + "T00:00:00");
   const day = d.getDay();
   const diff = d.getDate() - day + (day === 0 ? -6 : 1);
   d.setDate(diff);
-  return d.toISOString().split("T")[0];
+  return fmtDate(d);
 }
 
 export async function GET(request: NextRequest): Promise<NextResponse> {
@@ -30,7 +35,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   let streak = 0;
 
   const sortedDates = [...dates].sort().reverse();
-  const today = new Date().toISOString().split("T")[0];
+  const today = todayLocal();
   for (const date of sortedDates) {
     if (date > today) continue;
     const plan = plans.find((p) => p.date === date);

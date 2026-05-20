@@ -1,3 +1,8 @@
+export function todayLocal(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
 export function getCountdownDays(examDate: string): number {
   const exam = new Date(examDate + "T00:00:00");
   const today = new Date();
